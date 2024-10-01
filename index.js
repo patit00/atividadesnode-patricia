@@ -1,3 +1,4 @@
+const { Agent } = require('http');
 const prompt  = require('prompt-sync');
 const entrada = prompt();
 const nomeCompleto = "patricia esmeralda";
@@ -11,12 +12,36 @@ const Os = "os";
 const Para = "para";
 const Nao = "não";
 
-console.log("Olá eu sou " + nomeCompleto + ", estamos no ano " + anoAtual + " e nasci no ano  " + anoNascimento + " " + E + " pretendo estar no exército, usarei " + Os + " benefícios que " + O + " exército possui para chegar aonde realmente quero. Pretendo começar tudo isso no ano de");
+console.log("Olá eu sou " + nomeCompleto + ", estamos no ano " + anoAtual + " e nasci no ano  " + anoNascimento + " " + E + " pretendo estar no exército, usarei " + Os + " benefícios que " + O + " exército possui para chegar aonde realmente quero. Pretendo começar tudo isso no ano de"); 
 
 anoAtual = anoAtual + 1;
 console.log(anoAtual);
 
-console.log(`crase ${nomeCompleto}, estamos no ano ${anoAtual} e nasci no ano ${anoNascimento} ${E} tamo ae cara, tenho ${idade} `);
+console.log(`crase ${nomeCompleto}, Build software faster estamos no ano ${anoAtual} e nasci no ano ${anoNascimento} ${E} tamo ae cara, tenho ${idade} `);
+
+const loginCerto = "Patricia";
+const senhaCerta = 123;
+
+console.log("--------------------------");
+console.log("--AGENCIAS DE VIAGENS--");
+console.log("--------------------------");
+console.log("Faça seu login");
+
+var login = entrada("Digite seu login: ");
+var senha = entrada("Digite sua senha: ");
+
+while(login != loginCerto) {
+  console.log("Login Incorreto");
+  login = entrada("Digite seu Login Novamente");
+;
+}
+
+while(senha != senhaCerta ) {
+  console.log("Senha Incorreta");
+  senha = entrada("Digite sua senha Novamente");
+;
+}
+
 
 const ListaDeLocais = new Array(
   `Negrozaque`,
